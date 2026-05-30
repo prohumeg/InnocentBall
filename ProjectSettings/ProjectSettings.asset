@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Badal Gupta
+  companyName: badalgames
   productName: Innocent Ball
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -164,7 +164,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.4
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Android: com.badalgupta.innocentball
+    Android: badalgames.innocentball
     Standalone: com.DefaultCompany.2D-Project
   buildNumber:
     Standalone: 0
@@ -266,8 +266,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 2
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/badal/Desktop/Badalgame.keystore/innocentball.keystore
-  AndroidKeyaliasName: innocentballkey
+  AndroidKeystoreName: C:/Users/badal/Desktop/Me/My Games/Innocent Ball/key/innocentball.keystore
+  AndroidKeyaliasName: innoball
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidEnableArm64MTE: 0
   AndroidBuildApkPerCpuArchitecture: 0
