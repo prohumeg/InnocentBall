@@ -6,8 +6,11 @@ public class PlayerRespawn : MonoBehaviour
 
     private void Start()
     {
-        // Scene reload होने पर ball checkpoint पर आए
-        transform.position = checkpointPosition;
+        // अगर कोई चेकपॉइंट सेव है, तो वहां स्पॉन हो
+        if (checkpointPosition != Vector3.zero)
+        {
+            transform.position = checkpointPosition;
+        }
     }
 
     public void SetCheckpoint(Vector3 newPosition)
@@ -15,9 +18,9 @@ public class PlayerRespawn : MonoBehaviour
         checkpointPosition = newPosition;
     }
 
-    private void Awake()
+    // नया फंक्शन: चेकपॉइंट को पूरी तरह मिटाने के लिए
+    public static void ResetCheckpoint()
     {
-        if (checkpointPosition == Vector3.zero)
-            checkpointPosition = transform.position;
+        checkpointPosition = Vector3.zero;
     }
 }

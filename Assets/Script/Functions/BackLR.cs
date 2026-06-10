@@ -5,7 +5,10 @@ public class BackLR : MonoBehaviour
 {
     public void StartGame()
     {
-        Time.timeScale = 1f;   // Game unpause
+        // 1. चेकपॉइंट रीसेट (डेटा क्लियर हो जाएगा)
+        PlayerRespawn.ResetCheckpoint();
+
+        // 2. लेवल लोड
         SceneManager.LoadScene("LevelR");
     }
 }

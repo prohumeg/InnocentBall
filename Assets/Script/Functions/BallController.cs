@@ -56,7 +56,11 @@ public class BallController : MonoBehaviour
             rollAudio.Stop();
         }
     }
-
+    void Awake()
+    {
+        // यह पक्का करेगा कि गेम शुरू होते ही पुराना चेकपॉइंट हट जाए
+        PlayerPrefs.DeleteAll();
+    }
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
